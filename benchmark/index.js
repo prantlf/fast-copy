@@ -10,6 +10,7 @@ function Foo(value) {
 }
 
 const simpleObject = {
+  // bigint: BigInt('123456789123456789123456789123456789'),
   boolean: true,
   nil: null,
   number: 123,

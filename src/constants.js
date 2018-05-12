@@ -4,6 +4,11 @@
 export const HAS_ARRAYBUFFER_SUPPORT = typeof ArrayBuffer === 'function';
 
 /**
+ * @constant {boolean} HAS_BIGINT_SUPPORT
+ */
+export const HAS_BIGINT_SUPPORT = typeof BigInt === 'function';
+
+/**
  * @constant {boolean} HAS_BUFFER_SUPPORT
  */
 export const HAS_BUFFER_SUPPORT = typeof Buffer === 'function';

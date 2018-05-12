@@ -4,6 +4,7 @@ import _ from 'lodash';
 import React from 'react';
 
 import copy from '../src';
+import {HAS_BIGINT_SUPPORT} from '../src/constants';
 import {isObjectCopyable} from '../src/utils';
 
 function Foo(value) {
@@ -65,6 +66,10 @@ const object = {
   weakset: new WeakSet([{}, {}]),
   [Symbol('key')]: 'value'
 };
+
+if (HAS_BIGINT_SUPPORT) {
+  object.bigint = BigInt('123456789123456789123456789123456789');
+}
 
 object.deeply.nested.reference = object;
 

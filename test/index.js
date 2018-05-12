@@ -23,6 +23,10 @@ const SIMPLE_TYPES = {
   [Symbol('key')]: 'value'
 };
 
+if (constants.HAS_BIGINT_SUPPORT) {
+  SIMPLE_TYPES.bigint = BigInt('123456789123456789123456789123456789');
+}
+
 const COMPLEX_TYPES = {
   array: ['foo', {bar: 'baz'}],
   arrayBuffer: new ArrayBuffer(8),

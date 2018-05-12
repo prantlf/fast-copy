@@ -40,6 +40,7 @@ The following object types are deeply cloned when they are either properties on 
 
 * `Array`
 * `ArrayBuffer`
+* `BigInt`
 * `Buffer`
 * `DataView`
 * `Date`
